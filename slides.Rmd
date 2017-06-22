@@ -20,7 +20,7 @@ https://lgatto.github.io           University of Cambridge
 lg390@cam.ac.uk                    @lgatt0
 ```
 
-TODO: Add link and doi.
+Link to slides: [http://bit.ly/20170623pmf](http://bit.ly/20170623pmf)
 
 ## Licence
 
