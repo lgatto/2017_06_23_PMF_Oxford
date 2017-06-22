@@ -159,7 +159,7 @@ analysis and comprehension of high-throughput biology data.
 ![MSnbase contributions](./Figures/msnbase-contribs.png)
 
 
-## R/Bioconductor 
+## 
 
 A small glimps into the Bioconductor infrastructure available for mass
 spectrometry and proteomics
