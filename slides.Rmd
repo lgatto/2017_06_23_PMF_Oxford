@@ -20,7 +20,7 @@ https://lgatto.github.io           University of Cambridge
 lg390@cam.ac.uk                    @lgatt0
 ```
 
-Link to slides: [http://bit.ly/20170623pmf](http://bit.ly/20170623pmf)
+Link to slides: [http://bit.ly/20170623pmf](http://bit.ly/20170623pmf) -- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.816287.svg)](https://doi.org/10.5281/zenodo.816287)
 
 ## Licence
 
@@ -33,6 +33,11 @@ any purpose, even commercially.
 ![CC-BY](./Figures/cc1.jpg)
 
 ## Table of content
+
+- Data analysis
+- Proteomics
+- R/Bioconductor
+- Conclusions
 
 # Data analysis
 
@@ -59,7 +64,7 @@ It's not analysing data, it's *investigating* data - requires flexibility.
 * Tracking, re-use, share, communicable
 
 
-`Programming`,  but:
+`Data programming`,  but:
 
 * Learning curve (although, I would argue that the
   reflecting/investigating/analysing the data is the real challenge)
@@ -81,7 +86,7 @@ It's not analysing data, it's *investigating* data - requires flexibility.
 
 ## To analyse data, you need
 
-* ~~Programming skills~~
+* ~~Be a programmer~~
 * ~~Be a statistician/machine learner~~
 * Knowledge about the domain
 * Know about your data
@@ -118,12 +123,12 @@ To understand and communication data:
 ##
 
 It is not for the tool/software to tell me what plotting/analysis to
-perform, it is **for me**, to apply the most appropriate analysis or
+perform; it is **for me** to apply the most appropriate analysis or
 visualisation.
   
   
 It is not for the tool/software to tell me what plotting/analysis to
-perform, it is **for me**, to ask the most **appropriate question**.
+perform; it is **for me** to ask the most **appropriate question**.
   
   
 # Software: R/Bioconductor
@@ -138,7 +143,7 @@ infrastucture for **statistical analysis**, and enable **annotation**
 of the data.
 
 
-## Bioconductor
+## 
 
 [Bioconductor](https://bioconductor.org/) provides tools for the
 analysis and comprehension of high-throughput biology data.
@@ -161,40 +166,33 @@ analysis and comprehension of high-throughput biology data.
 
 ## 
 
-A small glimps into the Bioconductor infrastructure available for mass
-spectrometry and proteomics
-
 <div class="double">
 <p class="double-flow">
-- The `r Biocpkg("mzR")` package: efficient parsing of raw and
-  identification data.
+- The `r Biocpkg("mzR")` package: raw and identification data.
 - The `r Biocpkg("MSnbase")` package: MS and proteomics infrastructure
-  for robust analysis.
 - The `r Biocpkg("xcms")` package: metabolomics.
-- The `r Biocpkg("pRoloc")` package: inovative machine learning and
-  spatial proteomics.
-</p><p class="double-flow">
-<img src="Figures/deps.png" class="one-col-image">
+- The `r Biocpkg("pRoloc")` package: innovative ML and spatial proteomics.
 </p>
-</div>
+<p class="double-flow"> <img src="Figures/deps.png" class="one-col-image"> </p> </div>
 
 
-## `mzR`
+## The `mzR` package
 
-Efficient access to raw and (`netCDF`, `mzData`, `mzXML`, `mzML`)
-identification (`mzIdentML`).
+`r Biocpkg("mzR")`: Efficient access to raw and (`netCDF`, `mzData`,
+`mzXML`, `mzML`) identification (`mzIdentML`).
 
-> Chambers *et al.*. A cross-platform toolkit for mass spectrometry
-> and proteomics. Nature Biotechnology (2012).
+<font size="3">Chambers *et
+al.*. [A cross-platform toolkit for mass spectrometry and proteomics](https://www.ncbi.nlm.nih.gov/pubmed/23051804). Nature
+Biotechnology (2012). </font>
 
-## `MSnbase`
+## The `MSnbase` package
 
-Convenient infrastucture for mass spectrometry and proteomics data
-analyis.
+`r Biocpkg("MSnbase")`: Convenient infrastucture for mass spectrometry
+and proteomics data analyis.
 
-> Laurent Gatto and Kathryn S. Lilley. `MSnbase` - an R/Bioconductor
-> package for isobaric tagged mass spectrometry data visualization,
-> processing and quantitation. Bioinformatics 28, 288-289 (2012).
+<font size="3">Laurent Gatto and Kathryn
+S. Lilley. [`MSnbase` - an R/Bioconductor package for isobaric tagged mass spectrometry data visualization, processing and quantitation](https://www.ncbi.nlm.nih.gov/pubmed/22113085). Bioinformatics
+28, 288-289 (2012).</font>
 
 
 ## The `MSnSet` class for quantitative data
@@ -213,6 +211,24 @@ analyis.
 
 Can be subsetted, transformed, visualised, annotated, statistics, ...
 
+## The `pRoloc` package
+
+`r Biocpkg("pRoloc")`: A unifying analysis framework for spatial
+proteomics: visualisation, classification, novelty detection, transfer
+learning, Bayesian learning (coming soon).
+
+<font size="3">Gatto L, Breckels LM, Wieczorek S, Burger T, Lilley
+KS. [Mass-spectrometry-based spatial proteomics data analysis using `pRoloc` and `pRolocdata`](https://www.ncbi.nlm.nih.gov/pubmed/24413670). Bioinformatics. 2014
+May 1;30(9):1322-4.
+
+Breckels LM, Mulvey CM, Lilley KS and Gatto
+L. [A Bioconductor workflow for processing and analysing spatial proteomics data](https://f1000research.com/articles/5-2926/). F1000Research
+2016, 5:2926 (doi: 10.12688/f1000research.10411.1.  </font>
+
+## {.fullpage}
+
+![hyperLOPIT PCA](./Figures/hl.png)
+
 # Conclusions
 
 ## [Some brief advice on data analysis](https://lgatto.github.io/brief-data-analysis-advice/)
@@ -222,7 +238,7 @@ Can be subsetted, transformed, visualised, annotated, statistics, ...
 - Analyse early, analyse often
 - Divide and conquer
 - Ask for help
-- Be pragmatic
+- And, be pragmatic
 
 ## References, resources
 
@@ -238,14 +254,10 @@ Can be subsetted, transformed, visualised, annotated, statistics, ...
 
 
 
-## Acknowledgements
+## 
 
-### Development
+- **Development**: Sebastian Gibb, Johannes Rainer, Lisa Breckels
+- **Funding**: BBSRC, Wellcome Trust, FP7
 
-- Sebastian Gibb, Johannes Rainer
-
-### Funding: 
-- BBSRC
-
-**Thank you for your attention**
+Thank you for your attention
 
