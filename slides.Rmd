@@ -32,12 +32,11 @@ any purpose, even commercially.
 
 ![CC-BY](./Figures/cc1.jpg)
 
-## Table of content
+## Table of content {.fullpage}
 
-- Data analysis
-- Proteomics
-- R/Bioconductor
-- Conclusions
+**Data analysis**  &#9679; **Proteomics**  &#9679; **R/Bioconductor**  &#9679; **Conclusions**
+
+![CSAMA 2017, Plose](./Figures/20170614_172955.jpg)
 
 # Data analysis
 
@@ -146,13 +145,26 @@ of the data.
 ## 
 
 [Bioconductor](https://bioconductor.org/) provides tools for the
-analysis and comprehension of high-throughput biology data.
+analysis and comprehension of high-throughput biology data. Uses the [R
+statistical programming language](https://www.r-project.org/).
 
-- ~ [1400 packages](https://bioconductor.org/packages/release/BiocViews.html#___Software)
-- 62 for [mass spectrometry](https://bioconductor.org/packages/release/BiocViews.html#___MassSpectrometry)
-- 92 for [proteomics](https://bioconductor.org/packages/release/BiocViews.html#___Proteomics)
+**Collaborative project**: open source and open development, involving
+biologists, statisticians, programmers, ...
 
-**Collaborative project**: open source and open development.
+<font size="4"> Huber W *et
+al.*
+[Orchestrating high-throughput genomic analysis with Bioconductor](https://www.ncbi.nlm.nih.gov/pubmed/25633503). Nat
+Methods. 2015 Jan 29;12(2):115-21.</font>
+
+
+## 
+
+~ [1400 packages](https://bioconductor.org/packages/release/BiocViews.html#___Software) &#9679; 62 for [mass spectrometry](https://bioconductor.org/packages/release/BiocViews.html#___MassSpectrometry) &#9679; 92 for [proteomics](https://bioconductor.org/packages/release/BiocViews.html#___Proteomics)
+
+<div class="double">
+<p class="double-flow"><img src="Figures/pkg_devel.png" class="one-col-image"></p>
+<img src="Figures/pkg_download.png" class="one-col-image">
+</div>
 
 ##  {.fullpage}
 
@@ -181,7 +193,7 @@ analysis and comprehension of high-throughput biology data.
 `r Biocpkg("mzR")`: Efficient access to raw and (`netCDF`, `mzData`,
 `mzXML`, `mzML`) identification (`mzIdentML`).
 
-<font size="3">Chambers *et
+<font size="4">Chambers *et
 al.*. [A cross-platform toolkit for mass spectrometry and proteomics](https://www.ncbi.nlm.nih.gov/pubmed/23051804). Nature
 Biotechnology (2012). </font>
 
@@ -190,7 +202,7 @@ Biotechnology (2012). </font>
 `r Biocpkg("MSnbase")`: Convenient infrastucture for mass spectrometry
 and proteomics data analyis.
 
-<font size="3">Laurent Gatto and Kathryn
+<font size="4">Laurent Gatto and Kathryn
 S. Lilley. [`MSnbase` - an R/Bioconductor package for isobaric tagged mass spectrometry data visualization, processing and quantitation](https://www.ncbi.nlm.nih.gov/pubmed/22113085). Bioinformatics
 28, 288-289 (2012).</font>
 
@@ -214,31 +226,22 @@ Can be subsetted, transformed, visualised, annotated, statistics, ...
 ## The `pRoloc` package
 
 `r Biocpkg("pRoloc")`: A unifying analysis framework for spatial
-proteomics: visualisation, classification, novelty detection, transfer
-learning, Bayesian learning (coming soon).
+proteomics: visualisation,
+classification,
+[novelty detection](https://www.ncbi.nlm.nih.gov/pubmed/23523639),
+[transfer learning](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920),
+Bayesian learning (coming soon).
 
-<font size="3">Gatto L, Breckels LM, Wieczorek S, Burger T, Lilley
+<font size="4">Gatto L, Breckels LM, Wieczorek S, Burger T, Lilley
 KS. [Mass-spectrometry-based spatial proteomics data analysis using `pRoloc` and `pRolocdata`](https://www.ncbi.nlm.nih.gov/pubmed/24413670). Bioinformatics. 2014
-May 1;30(9):1322-4.
-
+May 1;30(9):1322-4.  
 Breckels LM, Mulvey CM, Lilley KS and Gatto
 L. [A Bioconductor workflow for processing and analysing spatial proteomics data](https://f1000research.com/articles/5-2926/). F1000Research
-2016, 5:2926 (doi: 10.12688/f1000research.10411.1.  </font>
+2016, 5:2926 (doi: 10.12688/f1000research.10411.1).</font>
 
 ## {.fullpage}
 
 ![hyperLOPIT PCA](./Figures/hl.png)
-
-# Conclusions
-
-## [Some brief advice on data analysis](https://lgatto.github.io/brief-data-analysis-advice/)
-
-- Plan ahead
-- Factor in analysis time
-- Analyse early, analyse often
-- Divide and conquer
-- Ask for help
-- And, be pragmatic
 
 ## References, resources
 
@@ -256,7 +259,10 @@ L. [A Bioconductor workflow for processing and analysing spatial proteomics data
 
 ## 
 
-- **Development**: Sebastian Gibb, Johannes Rainer, Lisa Breckels
+- **Development**:
+  [Sebastian Gibb](http://sebastiangibb.de/),
+  [Johannes Rainer](https://github.com/jotsetung),
+  [Lisa Breckels](https://github.com/lmsimp/)
 - **Funding**: BBSRC, Wellcome Trust, FP7
 
 Thank you for your attention
