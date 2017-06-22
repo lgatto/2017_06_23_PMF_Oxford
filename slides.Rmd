@@ -8,6 +8,10 @@ output:
     ratio: 16x10
 ---
 
+```{r env, echo=FALSE}
+library("BiocStyle")
+```
+
 ## The Bioconductor project - analysis and comprehension of high-throughput proteomics data
 
 ```
@@ -31,8 +35,160 @@ any purpose, even commercially.
 ## Table of content
 
 
+## What is data analysis
 
-## Content
+> Data analysis is the process by which data becomes understanding,
+> knowledge and insight. Hadley Wickham
+
+The ability to prepare and **explore** data, identify **patterns**
+(good and pathological ones) and convincingly demonstrate that the
+patterns are **genuine** (rather than random).
+
+It's not analysing data, it's *investigating* data - requires flexibility.
+
+##
+
+<img src="./Figures/Data_Analysis_Hadley_Wickham.png" class="cover">  
+
+
+## And also
+
+* Reproducibility/replicability
+* Automation
+* Plain text: tracking, re-use, share, communicable
+
+
+`Programming`,  but:
+
+* Learning curve (although, I would argue that the
+reflecting/investigating/analysing the data is the real challenge)
+
+
+## To analyse data, you need
+
+* ~~Be a programmer~~
+* ~~Be a statistician/machine learner~~
+
+## To analyse data, you need
+
+* ~~Be a programmer~~
+* ~~Be a statistician/machine learner~~
+* Knowledge about the domain
+* Know about your data
+* Be able to manipulate/visualise it
+* How good do we need to be?
+
+## To analyse data, you need
+
+* ~~Programming skills~~
+* ~~Be a statistician/machine learner~~
+* Knowledge about the domain
+* Know about your data
+* Be able to manipulate/visualise it
+* How good do we need to be? **Good enough**
+
+## Quantitative proteomics data analysis
+
+* What data do we have? 
+* What analyses can we apply?
+* Track/check the data throughout the analysis.
+
+## Example ... { .fullpage }
+
+![Proteomics data analysis schematics](./Figures/qprotda.png)
+
+## Visualisation
+
+> Graphics reveal data.
+
+  
+
+> Visualization can surprise you, but it doesn’t scale well. Modeling
+> scales well, but it can’t surprise you. Hadley Wickham
+
+## Example ... { .fullpage }
+
+![Proteomics data analysis schematics](./Figures/qprotda-with-plots.png)
+
+
+##
+
+It is not for the tool/software to tell me what plotting/analysis to
+perform, it is **for me**, to apply the most appropriate analysis or
+visualisation.
+  
+  
+It is not for the tool/software to tell me what plotting/analysis to
+perform, it is **for me**, to ask the most **appropriate question**.
+  
+  
+## { .fullpage }
+![MS animation](./Figures/msanim1.gif)
+
+
+
+## Data analysis tools
+
+should enables you to **manipulate** your data, give some guarantees
+about the **integrity** of the data, support effective
+**extract/subset** components of the data, **visualise** them, enable
+**transformation** of the data, give access to infrastucture for
+**statistical analysis**, and enable **annotation** of the data.
+
+## Data analysis tools
+
+* Store data as *computational objects* (rigorously defined data
+  structures): knowing where to find things
+* Consistency in data structures (and conventions)
+* Easily manipluate/transform/visualise these data (*Application
+  programming interface*)
+
+## R/Bioconductor 
+
+A small glimp into the Bioconductor infrastructure available for mass
+spectrometry and proteomics
+
+- The `r Biocpkg("mzR")` package: efficient parsing of raw and
+  identification data.
+- The `r Biocpkg("MSnbase")` package: MS and proteomics infrastructure
+  for robust analysis.
+- The `r Biocpkg("xcms")` package: metabolomics.
+- The `r Biocpkg("pRoloc")` package: inovative machine learning and
+  spatial proteomics.
+
+
+## *MSnbase* [collaborative development](https://lgatto.github.io/msnbase-contribs/) {.fullpage}
+
+![MSnbase contributions](./Figures/msnbase-contribs.png)
+
+
+## The `MSnSet` class for quantitative data
+
+<div class="double">
+<p class="double-flow">
+* Expression/quantitative data
+* Feature meta-data
+* Sample meta-data
+* Dimension constrains
+
+</p><p class="double-flow">
+<img src="Figures/msnset.png" class="one-col-image">
+</p>
+</div>
+
+Can be subsetted, transformed, visualised, annotated, statistics, ...
+
+## References, resources
+
+* Gatto *et al.* (2015) [Visualisation of proteomics data using R and Bioconductor](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4510819/)
+* Gatto and Christoforou (2014), [Using R and Bioconductor for proteomics data analysis](http://arxiv.org/pdf/1305.6559v1.pdf)
+* The `r Biocexptpkg("RforProteomics")` package
+  and
+  [R/Bioconductor workflow](https://rawgit.com/lgatto/bioc-ms-prot/master/lab.html)
+* General
+  [teaching material](http://lgatto.github.io/TeachingMaterial/) for R
+  and more
+
 
 
 ## Acknowledgements
