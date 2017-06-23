@@ -93,7 +93,10 @@ It's not analysing data, it's *investigating* data - requires **flexibility**.
 * Knowledge about the domain
 * Know about your data
 * Be able to manipulate/visualise it
-* How good do we need to be? **Good enough**
+* How good do we need to
+  be?
+  [**Good enough**](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) (Wilson
+  *et al.*, 2017)
 
 ## Visualisation
 
