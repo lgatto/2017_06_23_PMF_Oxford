@@ -253,7 +253,8 @@ L. [A Bioconductor workflow for processing and analysing spatial proteomics data
 <p class="double-flow">
 ```r
 plot2D(msnset, fcol = "loc",
-       method = "PCA")
+       method = "PCA",
+       cex = "svm.score")
 ```
 <img src="Figures/msnset.png" class="one-col-image">
 </p>
