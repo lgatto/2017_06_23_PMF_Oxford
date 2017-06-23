@@ -20,7 +20,7 @@ https://lgatto.github.io           University of Cambridge
 lg390@cam.ac.uk                    @lgatt0
 ```
 
-Link to slides: [http://bit.ly/20170623pmf](http://bit.ly/20170623pmf) -- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.816287.svg)](https://doi.org/10.5281/zenodo.816287)
+Link to slides: [http://bit.ly/20170623pmf](http://bit.ly/20170623pmf) -- [![DOI](Figures/zenodo.816287.svg)](https://doi.org/10.5281/zenodo.816287)
 
 ## Licence
 
@@ -38,6 +38,9 @@ any purpose, even commercially.
 
 ![CSAMA 2017, Plose](./Figures/20170614_172955.jpg)
 
+(Bioconductor [CSAMA 2017 workshop](http://www.huber.embl.de/csama2017/), Mount Plose)
+
+
 # Data analysis
 
 ## What is data analysis
@@ -49,7 +52,7 @@ The ability to prepare and **explore** data, identify **patterns**
 (good and pathological ones) and convincingly demonstrate that the
 patterns are **genuine** (rather than random).
 
-It's not analysing data, it's *investigating* data - requires flexibility.
+It's not analysing data, it's *investigating* data - requires **flexibility**.
 
 ##
 
@@ -60,7 +63,7 @@ It's not analysing data, it's *investigating* data - requires flexibility.
 
 * Reproducibility/replicability
 * Automation
-* Tracking, re-use, share, communicable
+* Tracking, re-use, share, communicate
 
 
 `Data programming`,  but:
@@ -156,6 +159,9 @@ al.*
 [Orchestrating high-throughput genomic analysis with Bioconductor](https://www.ncbi.nlm.nih.gov/pubmed/25633503). Nat
 Methods. 2015 Jan 29;12(2):115-21.</font>
 
+## {.fullpage}
+
+![Bioconductor stickers](./Figures/bioc_stickers.png)
 
 ## 
 
@@ -220,7 +226,6 @@ S. Lilley. [`MSnbase` - an R/Bioconductor package for isobaric tagged mass spect
 <img src="Figures/msnset.png" class="one-col-image">
 </p>
 </div>
-
 Can be subsetted, transformed, visualised, annotated, statistics, ...
 
 ## The `pRoloc` package
@@ -239,9 +244,19 @@ Breckels LM, Mulvey CM, Lilley KS and Gatto
 L. [A Bioconductor workflow for processing and analysing spatial proteomics data](https://f1000research.com/articles/5-2926/). F1000Research
 2016, 5:2926 (doi: 10.12688/f1000research.10411.1).</font>
 
-## {.fullpage}
+## Transform, annotate, visualise
 
-![hyperLOPIT PCA](./Figures/hl.png)
+<div class="double">
+<p class="double-flow">
+```r
+plot2D(msnset, fcol = "loc",
+       method = "PCA")
+```
+<img src="Figures/msnset.png" class="one-col-image">
+</p>
+<p class="double-flow"><img src="Figures/hl.png" class="one-col-image"></p>
+</div>
+
 
 ## References, resources
 
